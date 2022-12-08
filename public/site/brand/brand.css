@@ -1,0 +1,106 @@
+
+.slider-menu {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 110px;
+    margin-top: 15px;
+    background-color: #f8f8f8;
+}
+
+
+.slider{
+    background: url('./img/2-The-Brand_02.jpg') center center / cover no-repeat ;
+    width: 100%;
+    height: 450px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-btn {
+    display: none;
+}
+
+#slider-menu-logo {
+    margin-top: 35px;
+}
+
+.slider-title {
+    text-align: center;
+    color: var(--white-color);
+    text-transform: uppercase;
+}
+
+.slider-title h2 {
+    font-size: 4.5rem;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.slider-title h4 {
+    font-weight: 200;
+    font-size: 2.5rem;
+}
+
+.slider-menu-btn {
+    margin-top: 40px;
+}
+
+
+/* Body */
+
+.brand-body {
+    margin-top: 50px;
+}
+
+.brand-body-left {
+    color: var(--text-color);
+}
+
+.body-left-img {
+    width: 100%;
+}
+
+.left-img-two {
+    margin-top: 50px;
+}
+
+.body-left-title {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 20px 0 20px 0;
+}
+
+.body-left-strong {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.body-left-text {
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+.body-right-content-top h4 {
+    margin-top: 50px;
+}
+
+.body-right-img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.brand-body-right-logo {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.brand-body-right-logo img {
+    width: 200px;
+    width: 200px;
+}

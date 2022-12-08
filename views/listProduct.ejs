@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/site/home/home.css">
+    <link rel="stylesheet" href="/site/home/grid.css">
+    <link rel="stylesheet" href="/site/font/fontawesome-free-5.15.3-web/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="/site/font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/site/home/responsive.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="grid wide">
+            <div class="row">
+                    <div class="header-top">
+                        <div class="header-top-curr">
+                            <h4>Currency: GBP</h4>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="header-top-log">
+                            <a class="sign-connect"><h4 class="header-top-regis">Register</h4></a>
+                            <a class="sign-connect"><h4 class="header-top-sign">Sign In</h4></a>
+                        </div>
+                            <div class="header-top-cart">
+                                <i class="fas fa-cart-plus"></i>
+                                <p>empty</p>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                    </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="slider">
+        <nav class="slider-menu">
+            <a href="/"><img src="/images/1-Home_03.jpg" alt="" id="slider-menu-logo"></a>
+            <ul class="slider-menu-title hide-on-mobile-table hide-on-PC-low">
+                <% for (c of cateClothes) {%> 
+                    <a href="/listProduct/<%= c.id %>" class="bonusHeader">
+                        <li>
+                            <%= c.name %>
+                            <i class="ti-angle-down slider-menu-icon"></i>
+                        </li>
+                    </a>
+                <%} %>
+                <div class="slider-menu-form show-on-mobile-table">
+                    <input type="text" class="slider-menu-btn" placeholder="Searchsite">
+                    <i class="fas fa-search menu-icon-search"></i>
+                </div>
+            </ul>
+        </nav>
+        <button type="button" class="slider-btn hide-on-mobile">shop men's collection</button>
+    </div>
+
+    <!-- Lane -->
+
+    <div class="grid wide">
+        <div class="col l-12">
+            <hr class = "lane">
+        </div>
+    </div>
+        
+    <main>
+        <div class="grid wide">
+            <div class="col l-6">
+                <div class="main-menu hide-on-mobile">
+                    <ul>
+                        <li>popular</li>
+                        <li>new arrivals</li>
+                        <li>best sellers</li>
+                        <li>special offers</li>
+                        <li>coming soon</li>
+                    </ul>
+                </div>
+            </div>
+                
+            <div class="main-content">
+                <div class="row">
+                    <div class="col l-12">
+                        <div class="main-content-child">
+                            <div class="content-child-top">
+                                <article>
+                                    <div class="article-img">
+                                        <div class="row">
+                                            <% for (p of products) {%> 
+                                                <div class="col l-3 m-6 c-12">
+                                                    <div class="article-first article-bonus">
+                                                       <img src="/images/<%= p.image %>" alt="" class="article-first-img">
+                                                        <div class="article-info hide-on-mobile-table hide-on-PC-low">
+                                                            <a href="/product/<%= p.id %>" class="bonusHeader">
+                                                                <h4><%= p.name %></h4>
+                                                            </a>
+                                                            <p>Classic casual t-shirt for women on the move.  100% cotton.</p>
+                                                            <ul class="article-info-icon">
+                                                                <li>
+                                                                    <i class="ti-shopping-cart"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="ti-heart"></i>
+                                                                </li>
+                                                                <li>
+                                                                    <i class="fas fa-compress-alt"></i>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <%} %>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Lane -->
+    
+        <div class="grid wide">
+            <div class="col l-12">
+                <hr class = "lane">
+            </div>
+        </div>
+           
+    </main>
+
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-2-4 c-6">
+                    <nav class="footer-info">
+                        <h3 class="footer-info-title">Information</h3>
+                        <ul class="footer-info-list">
+                            <li>The brand</li>
+                            <li>Local stores</li>
+                            <li>Customer service</li>
+                            <li>Privacy & cookies</li>
+                            <li>Site map</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col l-2-4 c-6">
+                    <nav class="footer-info">
+                        <h3 class="footer-info-title">Why buy from us</h3>
+                        <ul class="footer-info-list">
+                            <li>Shipping & returns</li>
+                            <li>Secure shopping</li>
+                            <li>Testimonials</li>
+                            <li>Award winning</li>
+                            <li>Ethical trading</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col l-2-4 c-6">
+                    <nav class="footer-info">
+                        <h3 class="footer-info-title">Your account</h3>
+                        <ul class="footer-info-list">
+                            <li>Sign in</li>
+                            <li>Register</li>
+                            <li>View cart</li>
+                            <li>View your lookbook</li>
+                            <li>Track an order</li>
+                            <li>Update infomation</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col l-2-4 c-6">
+                    <nav class="footer-info">
+                        <h3 class="footer-info-title">Lookbook</h3>
+                        <ul class="footer-info-list">
+                            <li>Latest posts</li>
+                            <li>Men’s lookbook</li>
+                            <li>Women’s lookbook</li>
+                            <li>Lookbooks RSS feed</li>
+                            <li>View your lookbook</li>
+                            <li>Delete your lookbook</li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="col l-2-4 c-12">
+                    <nav class="footer-info">
+                        <h3 class="footer-info-title">contact details</h3>
+                        <ul class="footer-info-list">
+                            <li>Head Office: Avenue Fashion, <br> 180-182 Regent Street, London.</li>
+                            <li style="margin-top: 15px; margin-bottom: 5px;">Telephone: 0123-456-789</li>
+                            <li>Email: support@yourwebsite.com</li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row footer-img">
+                <div class="col l-6 m-12 c-12">
+                    <img src="/images/11.jpg" alt="" class="footer-img-child">
+                </div>
+
+                <div class="col l-6 m-12 c-12">
+                    <ul class="footer-social">
+                        <li>
+                            <i class="fab fa-facebook-f"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-twitter"></i>
+                        </li>
+                        <li>
+                            <i class="fas fa-camera-retro"></i>
+                        </li>
+                        <li>
+                            <i class="fab fa-pinterest"></i>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <div class="grid wide">
+                <div class="footer-bottom-child">
+                    <span>© 2016 Avenue Fashion™</span>
+                    <div class="footer-bottom-left">
+                        <span>Design by RobbyDesigns.com</span>
+                        <span>Dev by Loremipsum.com</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
